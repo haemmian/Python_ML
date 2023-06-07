@@ -4,7 +4,7 @@ import cv2
 from PIL import Image
 
 # Load the trained model
-model = tf.keras.models.load_model('AI_N1.h5')
+model = tf.keras.models.load_model('../AI_N1.h5')
 
 
 # Preprocess the input image
@@ -20,7 +20,7 @@ def preprocess_image(image_path):
 
 
 # Load and preprocess the real image
-image_path = 'testImages/test-Tshirt.png'
+image_path = '../testImages/test-Tshirt.png'
 preprocessed_image = preprocess_image(image_path)
 
 # Reshape the preprocessed image to match the input shape expected by the model

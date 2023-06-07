@@ -66,7 +66,7 @@ model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
 
-model = tf.keras.models.load_model("AI_N1.h5")
+model = tf.keras.models.load_model("../AI_N1.h5")
 
 # model.fit(train_images, train_labels, epochs=10)                           # Train the AI Model with the function fit
 #
